@@ -1,0 +1,5 @@
+package com.Test.qa.util;
+
+public interface IRetryAnalyzer {
+
+}

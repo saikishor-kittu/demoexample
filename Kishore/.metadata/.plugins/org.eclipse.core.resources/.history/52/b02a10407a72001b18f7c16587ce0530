@@ -1,0 +1,32 @@
+package com.Test.qa.testcases;
+
+//A Java program to demonstrate that both super class 
+//and subclass constructors refer to same object 
+
+//super class 
+class Fruit 
+{ 
+	public Fruit() 
+	{ 
+		System.out.println("Super class constructor"); 
+	} 
+} 
+
+//sub class 
+class Apple extends Fruit 
+{ 
+	public Apple() 
+	{ 
+		System.out.println("Subclass constructor invoked"); 
+
+	} 
+} 
+
+//driver class 
+public class Test 
+{ 
+	public static void main(String[] args) 
+	{ 
+		Apple myApple = new Apple(); 
+	} 
+} 

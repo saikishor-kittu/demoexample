@@ -1,0 +1,24 @@
+package com.Test.qa.testcases;
+
+	public class parent {
+	    int x;
+
+	    parent() {
+	        x = 5;
+	    }
+
+	}
+
+	class child extends parent {
+	int y;
+
+	child() {
+	    super();
+	    y = 10;
+	}
+
+	public static void main(String[] args) {
+
+	    child p = new child();
+	    System.out.println(p.y);//can't access variable y
+	}

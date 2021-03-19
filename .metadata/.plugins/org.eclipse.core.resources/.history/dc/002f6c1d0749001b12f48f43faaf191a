@@ -1,0 +1,33 @@
+package demos;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Login {
+
+	public static void main(String[] args) {
+		//1.define the browser	
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\atmakuri.saikishor\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	 WebDriver driver = new ChromeDriver();
+	 
+		//2. Open browser & Navigate to the URL 
+	 driver.get("https://www.flipkart.com/");
+		
+		//3.Enter credentials
+	 
+	driver.findElement(By.xpath("//div//input[@class='_2IX_2- VJZDxU']")).sendKeys("abcd@gmail.com");
+	
+	driver.findElement(By.xpath("//div//input[@class='_2IX_2- _3mctLh VJZDxU']")).sendKeys("2345567888");
+	 
+		//4.Click on login
+		
+	driver.findElement(By.xpath("//div//button[@class='_2KpZ6l _2HKlqd _3AWRsL']")).click();
+		//5.Confirmation
+		
+		//6.Close the browser
+
+	}
+
+}

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.practice.MavenTest.SampleSeleniumTest
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.527 s - in com.practice.MavenTest.SampleSeleniumTest
